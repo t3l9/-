@@ -1,0 +1,1413 @@
+﻿{
+  "paragraphs": [
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://two:4040/jobs/job?id=19",
+              "$$hashKey": "object:1605"
+            },
+            {
+              "jobUrl": "http://two:4040/jobs/job?id=20",
+              "$$hashKey": "object:1606"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699253795552_1651026580",
+      "id": "paragraph_1699253795552_1651026580",
+      "dateCreated": "2023-11-06T06:56:35+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1079",
+      "text": "val df = spark.read.csv(\"/home/av/Downloads/stocks_price_final.csv\")\r\ndf.show()",
+      "dateUpdated": "2023-11-06T06:57:17+0000",
+      "dateFinished": "2023-11-06T06:57:24+0000",
+      "dateStarted": "2023-11-06T06:57:17+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+\n| _c0|   _c1|       _c2|      _c3|      _c4|      _c5|      _c6|    _c7|      _c8|       _c9|         _c10|                _c11|    _c12|\n+----+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+\n|null|symbol|      date|     open|     high|      low|    close| volume| adjusted|market.cap|       sector|            industry|exchange|\n|   1|   TXG|2019-09-12|       54|       58|       51|    52.75|7326300|    52.75|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|   2|   TXG|2019-09-13|    52.75|   54.355|49.150002|    52.27|1025200|    52.27|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|   3|   TXG|2019-09-16|52.450001|       56|52.009998|55.200001| 269900|55.200001|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|   4|   TXG|2019-09-17|56.209999|60.900002|   55.423|56.779999| 602800|56.779999|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|   5|   TXG|2019-09-18|56.849998|    62.27|55.650002|       62|1589600|       62|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|   6|   TXG|2019-09-19|62.810001|   63.375|61.029999|61.119999| 425200|61.119999|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|   7|   TXG|2019-09-20|61.709999|62.419998|    59.82|     60.5| 392000|     60.5|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|   8|   TXG|2019-09-23|60.220001|61.485001|59.939999|60.330002| 137200|60.330002|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|   9|   TXG|2019-09-24|       61|       61|       54|54.299999| 713800|54.299999|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|  10|   TXG|2019-09-25|54.459999|55.880001|   52.563|52.759998| 261200|52.759998|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|  11|   TXG|2019-09-26|52.779999|53.689999|46.619999|49.990002| 596300|49.990002|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|  12|   TXG|2019-09-27|51.130001|       55|50.700001|51.029999| 621300|51.029999|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|  13|   TXG|2019-09-30|51.049999|       52|    49.25|50.400002| 168900|50.400002|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|  14|   TXG|2019-10-01|50.509998|51.919998|       46|47.029999| 536300|47.029999|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|  15|   TXG|2019-10-02|46.779999|    47.23|45.110001|    46.07| 519600|    46.07|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|  16|   TXG|2019-10-03|    46.77|48.240002|    45.75|48.119999| 703900|48.119999|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|  17|   TXG|2019-10-04|       48|    53.34|    47.82|51.450001| 322400|51.450001|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|  18|   TXG|2019-10-07|52.099998|53.220001|49.029999|50.360001| 476600|50.360001|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|  19|   TXG|2019-10-08|       50|    51.27|       49|49.549999| 284100|49.549999|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n+----+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+\nonly showing top 20 rows\n\n\u001b[1m\u001b[34mdf\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [_c0: string, _c1: string ... 11 more fields]\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://two:4040/jobs/job?id=21",
+              "$$hashKey": "object:1730"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699253837452_401293435",
+      "id": "paragraph_1699253837452_401293435",
+      "dateCreated": "2023-11-06T06:57:17+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1503",
+      "text": "val data = df.limit(5)\ndata.show()",
+      "dateUpdated": "2023-11-06T06:59:18+0000",
+      "dateFinished": "2023-11-06T06:59:24+0000",
+      "dateStarted": "2023-11-06T06:59:18+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+\n| _c0|   _c1|       _c2|      _c3|      _c4|      _c5|      _c6|    _c7|      _c8|       _c9|         _c10|                _c11|    _c12|\n+----+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+\n|null|symbol|      date|     open|     high|      low|    close| volume| adjusted|market.cap|       sector|            industry|exchange|\n|   1|   TXG|2019-09-12|       54|       58|       51|    52.75|7326300|    52.75|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|   2|   TXG|2019-09-13|    52.75|   54.355|49.150002|    52.27|1025200|    52.27|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|   3|   TXG|2019-09-16|52.450001|       56|52.009998|55.200001| 269900|55.200001|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|   4|   TXG|2019-09-17|56.209999|60.900002|   55.423|56.779999| 602800|56.779999|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n+----+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+\n\n\u001b[1m\u001b[34mdata\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Dataset[org.apache.spark.sql.Row]\u001b[0m = [_c0: string, _c1: string ... 11 more fields]\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699253958064_1318623468",
+      "id": "paragraph_1699253958064_1318623468",
+      "dateCreated": "2023-11-06T06:59:18+0000",
+      "status": "ERROR",
+      "focus": true,
+      "$$hashKey": "object:1630",
+      "text": "data.write.csv(\"/home/av/Downloads/data.csv\")\ndata.select(\"date\", \"open\", \"close\", \"adjusted\").write.json(\"/home/av/Downloads/data.json\")",
+      "dateUpdated": "2023-11-06T07:00:47+0000",
+      "dateFinished": "2023-11-06T07:00:48+0000",
+      "dateStarted": "2023-11-06T07:00:47+0000",
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "org.apache.spark.sql.AnalysisException: path file:/home/av/Downloads/data.csv already exists.;\n  at org.apache.spark.sql.execution.datasources.InsertIntoHadoopFsRelationCommand.run(InsertIntoHadoopFsRelationCommand.scala:109)\n  at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult$lzycompute(commands.scala:104)\n  at org.apache.spark.sql.execution.command.DataWritingCommandExec.sideEffectResult(commands.scala:102)\n  at org.apache.spark.sql.execution.command.DataWritingCommandExec.doExecute(commands.scala:122)\n  at org.apache.spark.sql.execution.SparkPlan$$anonfun$execute$1.apply(SparkPlan.scala:131)\n  at org.apache.spark.sql.execution.SparkPlan$$anonfun$execute$1.apply(SparkPlan.scala:127)\n  at org.apache.spark.sql.execution.SparkPlan$$anonfun$executeQuery$1.apply(SparkPlan.scala:155)\n  at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)\n  at org.apache.spark.sql.execution.SparkPlan.executeQuery(SparkPlan.scala:152)\n  at org.apache.spark.sql.execution.SparkPlan.execute(SparkPlan.scala:127)\n  at org.apache.spark.sql.execution.QueryExecution.toRdd$lzycompute(QueryExecution.scala:80)\n  at org.apache.spark.sql.execution.QueryExecution.toRdd(QueryExecution.scala:80)\n  at org.apache.spark.sql.DataFrameWriter$$anonfun$runCommand$1.apply(DataFrameWriter.scala:654)\n  at org.apache.spark.sql.DataFrameWriter$$anonfun$runCommand$1.apply(DataFrameWriter.scala:654)\n  at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:77)\n  at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:654)\n  at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:273)\n  at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:267)\n  at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:225)\n  at org.apache.spark.sql.DataFrameWriter.csv(DataFrameWriter.scala:642)\n  ... 47 elided\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699254047454_231722920",
+      "id": "paragraph_1699254047454_231722920",
+      "dateCreated": "2023-11-06T07:00:47+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1741",
+      "text": "data.printSchema()",
+      "dateUpdated": "2023-11-06T07:01:12+0000",
+      "dateFinished": "2023-11-06T07:01:13+0000",
+      "dateStarted": "2023-11-06T07:01:12+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- _c0: string (nullable = true)\n |-- _c1: string (nullable = true)\n |-- _c2: string (nullable = true)\n |-- _c3: string (nullable = true)\n |-- _c4: string (nullable = true)\n |-- _c5: string (nullable = true)\n |-- _c6: string (nullable = true)\n |-- _c7: string (nullable = true)\n |-- _c8: string (nullable = true)\n |-- _c9: string (nullable = true)\n |-- _c10: string (nullable = true)\n |-- _c11: string (nullable = true)\n |-- _c12: string (nullable = true)\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699254072782_118835301",
+      "id": "paragraph_1699254072782_118835301",
+      "dateCreated": "2023-11-06T07:01:12+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1841",
+      "text": "import org.apache.spark.sql.types._\n\nval data_schema = Array(\n    StructField(\"_c0\", IntegerType, true),\n    StructField(\"symbol\", StringType, true),\n    StructField(\"data\", DateType, true),\n    StructField(\"open\", DoubleType, true),\n    StructField(\"high\", DoubleType, true),\n    StructField(\"low\", DoubleType, true),\n    StructField(\"close\", DoubleType, true),\n    StructField(\"volume\", IntegerType, true),\n    StructField(\"adjusted\", DoubleType, true),\n    StructField(\"market.cap\", StringType, true),\n    StructField(\"sector\", StringType, true),\n    StructField(\"industry\", StringType, true),\n    StructField(\"exchange\", StringType, true)\n    )",
+      "dateUpdated": "2023-11-06T07:05:54+0000",
+      "dateFinished": "2023-11-06T07:05:55+0000",
+      "dateStarted": "2023-11-06T07:05:54+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.sql.types._\n\u001b[1m\u001b[34mdata_schema\u001b[0m: \u001b[1m\u001b[32mArray[org.apache.spark.sql.types.StructField]\u001b[0m = Array(StructField(_c0,IntegerType,true), StructField(symbol,StringType,true), StructField(data,DateType,true), StructField(open,DoubleType,true), StructField(high,DoubleType,true), StructField(low,DoubleType,true), StructField(close,DoubleType,true), StructField(volume,IntegerType,true), StructField(adjusted,DoubleType,true), StructField(market.cap,StringType,true), StructField(sector,StringType,true), StructField(industry,StringType,true), StructField(exchange,StringType,true))\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699254354984_97215994",
+      "id": "paragraph_1699254354984_97215994",
+      "dateCreated": "2023-11-06T07:05:54+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:1941",
+      "text": "val final_struc = StructType(fields = data_schema)\n\nval df = spark.read.format(\"csv\").option(\"header\", \"true\").schema(final_struc ).load(\"/home/av/Downloads/stocks_price_final.csv\")\ndf.printSchema()",
+      "dateUpdated": "2023-11-06T07:07:58+0000",
+      "dateFinished": "2023-11-06T07:07:59+0000",
+      "dateStarted": "2023-11-06T07:07:58+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- _c0: integer (nullable = true)\n |-- symbol: string (nullable = true)\n |-- data: date (nullable = true)\n |-- open: double (nullable = true)\n |-- high: double (nullable = true)\n |-- low: double (nullable = true)\n |-- close: double (nullable = true)\n |-- volume: integer (nullable = true)\n |-- adjusted: double (nullable = true)\n |-- market.cap: string (nullable = true)\n |-- sector: string (nullable = true)\n |-- industry: string (nullable = true)\n |-- exchange: string (nullable = true)\n\n\u001b[1m\u001b[34mfinal_struc\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.types.StructType\u001b[0m = StructType(StructField(_c0,IntegerType,true), StructField(symbol,StringType,true), StructField(data,DateType,true), StructField(open,DoubleType,true), StructField(high,DoubleType,true), StructField(low,DoubleType,true), StructField(close,DoubleType,true), StructField(volume,IntegerType,true), StructField(adjusted,DoubleType,true), StructField(market.cap,StringType,true), StructField(sector,StringType,true), StructField(industry,StringType,true), StructField(exchange,StringType,true))\n\u001b[1m\u001b[34mdf\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [_c0: int, symbol: string ... 11 more fields]\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://two:4040/jobs/job?id=22",
+              "$$hashKey": "object:2257"
+            },
+            {
+              "jobUrl": "http://two:4040/jobs/job?id=23",
+              "$$hashKey": "object:2258"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699254478609_102670942",
+      "id": "paragraph_1699254478609_102670942",
+      "dateCreated": "2023-11-06T07:07:58+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2044",
+      "text": "val tst_josn = spark.read.json(\"/home/av/Downloads/data.json\")\ntst_josn.show()",
+      "dateUpdated": "2023-11-06T07:08:44+0000",
+      "dateFinished": "2023-11-06T07:08:45+0000",
+      "dateStarted": "2023-11-06T07:08:44+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---------+---------+----------+---------+\n| adjusted|    close|      date|     open|\n+---------+---------+----------+---------+\n|    52.75|    52.75|2019-09-12|       54|\n|    52.27|    52.27|2019-09-13|    52.75|\n|55.200001|55.200001|2019-09-16|52.450001|\n|56.779999|56.779999|2019-09-17|56.209999|\n|       62|       62|2019-09-18|56.849998|\n+---------+---------+----------+---------+\n\n\u001b[1m\u001b[34mtst_josn\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [adjusted: string, close: string ... 2 more fields]\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699254524332_1392110534",
+      "id": "paragraph_1699254524332_1392110534",
+      "dateCreated": "2023-11-06T07:08:44+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2144",
+      "text": "data.schema",
+      "dateUpdated": "2023-11-06T07:08:58+0000",
+      "dateFinished": "2023-11-06T07:08:58+0000",
+      "dateStarted": "2023-11-06T07:08:58+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres31\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.types.StructType\u001b[0m = StructType(StructField(_c0,StringType,true), StructField(_c1,StringType,true), StructField(_c2,StringType,true), StructField(_c3,StringType,true), StructField(_c4,StringType,true), StructField(_c5,StringType,true), StructField(_c6,StringType,true), StructField(_c7,StringType,true), StructField(_c8,StringType,true), StructField(_c9,StringType,true), StructField(_c10,StringType,true), StructField(_c11,StringType,true), StructField(_c12,StringType,true))\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699254538043_1233741246",
+      "id": "paragraph_1699254538043_1233741246",
+      "dateCreated": "2023-11-06T07:08:58+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2273",
+      "text": "data.dtypes",
+      "dateUpdated": "2023-11-06T07:09:05+0000",
+      "dateFinished": "2023-11-06T07:09:05+0000",
+      "dateStarted": "2023-11-06T07:09:05+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres32\u001b[0m: \u001b[1m\u001b[32mArray[(String, String)]\u001b[0m = Array((_c0,StringType), (_c1,StringType), (_c2,StringType), (_c3,StringType), (_c4,StringType), (_c5,StringType), (_c6,StringType), (_c7,StringType), (_c8,StringType), (_c9,StringType), (_c10,StringType), (_c11,StringType), (_c12,StringType))\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://two:4040/jobs/job?id=24",
+              "$$hashKey": "object:2579"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699254545283_134608089",
+      "id": "paragraph_1699254545283_134608089",
+      "dateCreated": "2023-11-06T07:09:05+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2373",
+      "text": "data.take(5)",
+      "dateUpdated": "2023-11-06T07:09:12+0000",
+      "dateFinished": "2023-11-06T07:09:18+0000",
+      "dateStarted": "2023-11-06T07:09:12+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres33\u001b[0m: \u001b[1m\u001b[32mArray[org.apache.spark.sql.Row]\u001b[0m = Array([null,symbol,date,open,high,low,close,volume,adjusted,market.cap,sector,industry,exchange], [1,TXG,2019-09-12,54,58,51,52.75,7326300,52.75,$9.31B,Capital Goods,Biotechnology: Laboratory Analytical Instruments,NASDAQ], [2,TXG,2019-09-13,52.75,54.355,49.150002,52.27,1025200,52.27,$9.31B,Capital Goods,Biotechnology: Laboratory Analytical Instruments,NASDAQ], [3,TXG,2019-09-16,52.450001,56,52.009998,55.200001,269900,55.200001,$9.31B,Capital Goods,Biotechnology: Laboratory Analytical Instruments,NASDAQ], [4,TXG,2019-09-17,56.209999,60.900002,55.423,56.779999,602800,56.779999,$9.31B,Capital Goods,Biotechnology: Laboratory Analytical Instruments,NASDAQ])\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://two:4040/jobs/job?id=25",
+              "$$hashKey": "object:2690"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699254552535_1295387032",
+      "id": "paragraph_1699254552535_1295387032",
+      "dateCreated": "2023-11-06T07:09:12+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2476",
+      "text": "data.first()",
+      "dateUpdated": "2023-11-06T07:09:27+0000",
+      "dateFinished": "2023-11-06T07:09:33+0000",
+      "dateStarted": "2023-11-06T07:09:27+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres34\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.Row\u001b[0m = [null,symbol,date,open,high,low,close,volume,adjusted,market.cap,sector,industry,exchange]\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://two:4040/jobs/job?id=26",
+              "$$hashKey": "object:2803"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699254567023_643977858",
+      "id": "paragraph_1699254567023_643977858",
+      "dateCreated": "2023-11-06T07:09:27+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2590",
+      "text": "data.describe().show()",
+      "dateUpdated": "2023-11-06T07:09:41+0000",
+      "dateFinished": "2023-11-06T07:09:48+0000",
+      "dateStarted": "2023-11-06T07:09:41+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------+------------------+------+----------+------------------+-----------------+------------------+-----------------+------------------+-----------------+----------+-------------+--------------------+--------+\n|summary|               _c0|   _c1|       _c2|               _c3|              _c4|               _c5|              _c6|               _c7|              _c8|       _c9|         _c10|                _c11|    _c12|\n+-------+------------------+------+----------+------------------+-----------------+------------------+-----------------+------------------+-----------------+----------+-------------+--------------------+--------+\n|  count|                 4|     5|         5|                 5|                5|                 5|                5|                 5|                5|         5|            5|                   5|       5|\n|   mean|               2.5|  null|      null|           53.8525|       57.3137505|          51.89575|54.25000000000001|         2306050.0|54.25000000000001|      null|         null|                null|    null|\n| stddev|1.2909944487358056|  null|      null|1.7090023873595577|2.817344085896208|2.6328720256282887|2.119260628930283|3361073.9439450996|2.119260628930283|      null|         null|                null|    null|\n|    min|                 1|   TXG|2019-09-12|         52.450001|           54.355|         49.150002|            52.27|           1025200|            52.27|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|    max|                 4|symbol|      date|              open|             high|               low|            close|            volume|         adjusted|market.cap|       sector|            industry|exchange|\n+-------+------------------+------+----------+------------------+-----------------+------------------+-----------------+------------------+-----------------+----------+-------------+--------------------+--------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699254581615_402102504",
+      "id": "paragraph_1699254581615_402102504",
+      "dateCreated": "2023-11-06T07:09:41+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2701",
+      "text": "data.columns",
+      "dateUpdated": "2023-11-06T07:09:54+0000",
+      "dateFinished": "2023-11-06T07:09:55+0000",
+      "dateStarted": "2023-11-06T07:09:54+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres36\u001b[0m: \u001b[1m\u001b[32mArray[String]\u001b[0m = Array(_c0, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11, _c12)\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://two:4040/jobs/job?id=27",
+              "$$hashKey": "object:3019"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699254594463_1702308609",
+      "id": "paragraph_1699254594463_1702308609",
+      "dateCreated": "2023-11-06T07:09:54+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2814",
+      "text": "data.count()",
+      "dateUpdated": "2023-11-06T07:10:01+0000",
+      "dateFinished": "2023-11-06T07:10:05+0000",
+      "dateStarted": "2023-11-06T07:10:01+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres37\u001b[0m: \u001b[1m\u001b[32mLong\u001b[0m = 5\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://two:4040/jobs/job?id=28",
+              "$$hashKey": "object:3133"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699254601775_305943824",
+      "id": "paragraph_1699254601775_305943824",
+      "dateCreated": "2023-11-06T07:10:01+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:2917",
+      "text": "data.distinct().count()",
+      "dateUpdated": "2023-11-06T07:10:24+0000",
+      "dateFinished": "2023-11-06T07:10:30+0000",
+      "dateStarted": "2023-11-06T07:10:24+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres38\u001b[0m: \u001b[1m\u001b[32mLong\u001b[0m = 5\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://two:4040/jobs/job?id=29",
+              "$$hashKey": "object:3246"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699254624019_357985292",
+      "id": "paragraph_1699254624019_357985292",
+      "dateCreated": "2023-11-06T07:10:24+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:3033",
+      "text": "data.distinct().show()",
+      "dateUpdated": "2023-11-06T07:10:43+0000",
+      "dateFinished": "2023-11-06T07:10:50+0000",
+      "dateStarted": "2023-11-06T07:10:43+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+\n| _c0|   _c1|       _c2|      _c3|      _c4|      _c5|      _c6|    _c7|      _c8|       _c9|         _c10|                _c11|    _c12|\n+----+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+\n|null|symbol|      date|     open|     high|      low|    close| volume| adjusted|market.cap|       sector|            industry|exchange|\n|   1|   TXG|2019-09-12|       54|       58|       51|    52.75|7326300|    52.75|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|   2|   TXG|2019-09-13|    52.75|   54.355|49.150002|    52.27|1025200|    52.27|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|   3|   TXG|2019-09-16|52.450001|       56|52.009998|55.200001| 269900|55.200001|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|   4|   TXG|2019-09-17|56.209999|60.900002|   55.423|56.779999| 602800|56.779999|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n+----+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://two:4040/jobs/job?id=30",
+              "$$hashKey": "object:3642"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699254782764_576738321",
+      "id": "paragraph_1699254782764_576738321",
+      "dateCreated": "2023-11-06T07:13:02+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:3440",
+      "text": "// Операции со столбцами\nimport org.apache.spark.sql.Row\nimport org.apache.spark.sql.functions.lit\n\nval data_new = data.withColumn(\"test_new\", lit(\"test\")) //lit - создает столбец test_new и заполняет его значениями \"test\"\n\ndata_new.show(5)",
+      "dateUpdated": "2023-11-06T07:13:25+0000",
+      "dateFinished": "2023-11-06T07:13:32+0000",
+      "dateStarted": "2023-11-06T07:13:25+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+--------+\n| _c0|   _c1|       _c2|      _c3|      _c4|      _c5|      _c6|    _c7|      _c8|       _c9|         _c10|                _c11|    _c12|test_new|\n+----+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+--------+\n|null|symbol|      date|     open|     high|      low|    close| volume| adjusted|market.cap|       sector|            industry|exchange|    test|\n|   1|   TXG|2019-09-12|       54|       58|       51|    52.75|7326300|    52.75|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|    test|\n|   2|   TXG|2019-09-13|    52.75|   54.355|49.150002|    52.27|1025200|    52.27|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|    test|\n|   3|   TXG|2019-09-16|52.450001|       56|52.009998|55.200001| 269900|55.200001|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|    test|\n|   4|   TXG|2019-09-17|56.209999|60.900002|   55.423|56.779999| 602800|56.779999|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|    test|\n+----+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+--------+\n\nimport org.apache.spark.sql.Row\nimport org.apache.spark.sql.functions.lit\n\u001b[1m\u001b[34mdata_new\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [_c0: string, _c1: string ... 12 more fields]\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://two:4040/jobs/job?id=31",
+              "$$hashKey": "object:3761"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699254805337_2024565322",
+      "id": "paragraph_1699254805337_2024565322",
+      "dateCreated": "2023-11-06T07:13:25+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:3534",
+      "text": "data_new.withColumnRenamed(\"test_new\", \"test_new_1\").show()",
+      "dateUpdated": "2023-11-06T07:14:12+0000",
+      "dateFinished": "2023-11-06T07:14:19+0000",
+      "dateStarted": "2023-11-06T07:14:12+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+----------+\n| _c0|   _c1|       _c2|      _c3|      _c4|      _c5|      _c6|    _c7|      _c8|       _c9|         _c10|                _c11|    _c12|test_new_1|\n+----+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+----------+\n|null|symbol|      date|     open|     high|      low|    close| volume| adjusted|market.cap|       sector|            industry|exchange|      test|\n|   1|   TXG|2019-09-12|       54|       58|       51|    52.75|7326300|    52.75|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|      test|\n|   2|   TXG|2019-09-13|    52.75|   54.355|49.150002|    52.27|1025200|    52.27|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|      test|\n|   3|   TXG|2019-09-16|52.450001|       56|52.009998|55.200001| 269900|55.200001|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|      test|\n|   4|   TXG|2019-09-17|56.209999|60.900002|   55.423|56.779999| 602800|56.779999|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|      test|\n+----+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+----------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://two:4040/jobs/job?id=32",
+              "$$hashKey": "object:3973"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699254875546_998938340",
+      "id": "paragraph_1699254875546_998938340",
+      "dateCreated": "2023-11-06T07:14:35+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:3778",
+      "text": "data_new.drop(\"test_new\").show()",
+      "dateUpdated": "2023-11-06T07:14:52+0000",
+      "dateFinished": "2023-11-06T07:14:58+0000",
+      "dateStarted": "2023-11-06T07:14:52+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+----+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+\n| _c0|   _c1|       _c2|      _c3|      _c4|      _c5|      _c6|    _c7|      _c8|       _c9|         _c10|                _c11|    _c12|\n+----+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+\n|null|symbol|      date|     open|     high|      low|    close| volume| adjusted|market.cap|       sector|            industry|exchange|\n|   1|   TXG|2019-09-12|       54|       58|       51|    52.75|7326300|    52.75|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|   2|   TXG|2019-09-13|    52.75|   54.355|49.150002|    52.27|1025200|    52.27|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|   3|   TXG|2019-09-16|52.450001|       56|52.009998|55.200001| 269900|55.200001|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|   4|   TXG|2019-09-17|56.209999|60.900002|   55.423|56.779999| 602800|56.779999|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n+----+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699254953137_857706513",
+      "id": "paragraph_1699254953137_857706513",
+      "dateCreated": "2023-11-06T07:15:53+0000",
+      "status": "ERROR",
+      "focus": true,
+      "$$hashKey": "object:3984",
+      "text": "val data_null = data.withColumn(\"close\", when(col(\"close\")===62,null).otherwise(col(\"close\")))",
+      "dateUpdated": "2023-11-06T07:17:29+0000",
+      "dateFinished": "2023-11-06T07:17:30+0000",
+      "dateStarted": "2023-11-06T07:17:29+0000",
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "org.apache.spark.sql.AnalysisException: cannot resolve '`close`' given input columns: [_c5, _c3, _c9, _c11, _c4, _c12, _c7, _c10, _c2, _c8, _c0, _c1, _c6];;\n'Project [_c0#1670, _c1#1671, _c2#1672, _c3#1673, _c4#1674, _c5#1675, _c6#1676, _c7#1677, _c8#1678, _c9#1679, _c10#1680, _c11#1681, _c12#1682, CASE WHEN ('close = 62) THEN null ELSE 'close END AS close#3047]\n+- AnalysisBarrier\n      +- GlobalLimit 5\n         +- LocalLimit 5\n            +- Relation[_c0#1670,_c1#1671,_c2#1672,_c3#1673,_c4#1674,_c5#1675,_c6#1676,_c7#1677,_c8#1678,_c9#1679,_c10#1680,_c11#1681,_c12#1682] csv\n\n  at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)\n  at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1$$anonfun$apply$2.applyOrElse(CheckAnalysis.scala:88)\n  at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1$$anonfun$apply$2.applyOrElse(CheckAnalysis.scala:85)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$transformUp$1.apply(TreeNode.scala:289)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$transformUp$1.apply(TreeNode.scala:289)\n  at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:70)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.transformUp(TreeNode.scala:288)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$4.apply(TreeNode.scala:306)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.mapChildren(TreeNode.scala:304)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.transformUp(TreeNode.scala:286)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$4$$anonfun$apply$11.apply(TreeNode.scala:344)\n  at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)\n  at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)\n  at scala.collection.immutable.List.foreach(List.scala:381)\n  at scala.collection.TraversableLike$class.map(TraversableLike.scala:234)\n  at scala.collection.immutable.List.map(List.scala:285)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$4.apply(TreeNode.scala:333)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.mapChildren(TreeNode.scala:304)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.transformUp(TreeNode.scala:286)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$4.apply(TreeNode.scala:306)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.mapChildren(TreeNode.scala:304)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.transformUp(TreeNode.scala:286)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$transformExpressionsUp$1.apply(QueryPlan.scala:95)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$transformExpressionsUp$1.apply(QueryPlan.scala:95)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan.transformExpression$1(QueryPlan.scala:106)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan.org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1(QueryPlan.scala:116)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1$1.apply(QueryPlan.scala:120)\n  at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)\n  at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)\n  at scala.collection.immutable.List.foreach(List.scala:381)\n  at scala.collection.TraversableLike$class.map(TraversableLike.scala:234)\n  at scala.collection.immutable.List.map(List.scala:285)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan.org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1(QueryPlan.scala:120)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$1.apply(QueryPlan.scala:125)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan.mapExpressions(QueryPlan.scala:125)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan.transformExpressionsUp(QueryPlan.scala:95)\n  at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1.apply(CheckAnalysis.scala:85)\n  at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1.apply(CheckAnalysis.scala:80)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:127)\n  at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$class.checkAnalysis(CheckAnalysis.scala:80)\n  at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:91)\n  at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:104)\n  at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:57)\n  at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:55)\n  at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:47)\n  at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:74)\n  at org.apache.spark.sql.Dataset.org$apache$spark$sql$Dataset$$withPlan(Dataset.scala:3295)\n  at org.apache.spark.sql.Dataset.select(Dataset.scala:1307)\n  at org.apache.spark.sql.Dataset.withColumns(Dataset.scala:2192)\n  at org.apache.spark.sql.Dataset.withColumn(Dataset.scala:2159)\n  ... 49 elided\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://two:4040/jobs/job?id=33",
+              "$$hashKey": "object:4317"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699254996946_397711292",
+      "id": "paragraph_1699254996946_397711292",
+      "dateCreated": "2023-11-06T07:16:36+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4087",
+      "text": "data_null.show()",
+      "dateUpdated": "2023-11-06T07:17:48+0000",
+      "dateFinished": "2023-11-06T07:17:55+0000",
+      "dateStarted": "2023-11-06T07:17:48+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+\n|_c0|symbol|      date|     open|     high|      low|    close| volume| adjusted|market.cap|       sector|            industry|exchange|\n+---+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+\n|  1|   TXG|2019-09-12|       54|       58|       51|    52.75|7326300|    52.75|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|  2|   TXG|2019-09-13|    52.75|   54.355|49.150002|    52.27|1025200|    52.27|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|  3|   TXG|2019-09-16|52.450001|       56|52.009998|55.200001| 269900|55.200001|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|  4|   TXG|2019-09-17|56.209999|60.900002|   55.423|56.779999| 602800|56.779999|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|  5|   TXG|2019-09-18|56.849998|    62.27|55.650002|     null|1589600|       62|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n+---+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699255068787_1480173921",
+      "id": "paragraph_1699255068787_1480173921",
+      "dateCreated": "2023-11-06T07:17:48+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4217",
+      "text": "val data_null_new = data_null.withColumnRenamed(\"market.cap\", \"market_cap\")",
+      "dateUpdated": "2023-11-06T07:18:46+0000",
+      "dateFinished": "2023-11-06T07:18:47+0000",
+      "dateStarted": "2023-11-06T07:18:46+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mdata_null_new\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.sql.DataFrame\u001b[0m = [_c0: string, symbol: string ... 11 more fields]\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://two:4040/jobs/job?id=34",
+              "$$hashKey": "object:4530"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699255126268_1689680637",
+      "id": "paragraph_1699255126268_1689680637",
+      "dateCreated": "2023-11-06T07:18:46+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4328",
+      "text": "data_null_new.na.drop().show()",
+      "dateUpdated": "2023-11-06T07:19:03+0000",
+      "dateFinished": "2023-11-06T07:19:10+0000",
+      "dateStarted": "2023-11-06T07:19:03+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+---+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+\n|_c0|symbol|      date|     open|     high|      low|    close| volume| adjusted|market_cap|       sector|            industry|exchange|\n+---+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+\n|  1|   TXG|2019-09-12|       54|       58|       51|    52.75|7326300|    52.75|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|  2|   TXG|2019-09-13|    52.75|   54.355|49.150002|    52.27|1025200|    52.27|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|  3|   TXG|2019-09-16|52.450001|       56|52.009998|55.200001| 269900|55.200001|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n|  4|   TXG|2019-09-17|56.209999|60.900002|   55.423|56.779999| 602800|56.779999|    $9.31B|Capital Goods|Biotechnology: La...|  NASDAQ|\n+---+------+----------+---------+---------+---------+---------+-------+---------+----------+-------------+--------------------+--------+\n\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699255143198_103764999",
+      "id": "paragraph_1699255143198_103764999",
+      "dateCreated": "2023-11-06T07:19:03+0000",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:4428",
+      "text": "import org.apache.spark.sql.functions.mean",
+      "dateUpdated": "2023-11-06T07:19:44+0000",
+      "dateFinished": "2023-11-06T07:19:44+0000",
+      "dateStarted": "2023-11-06T07:19:44+0000",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.sql.functions.mean\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699255184287_491341743",
+      "id": "paragraph_1699255184287_491341743",
+      "dateCreated": "2023-11-06T07:19:44+0000",
+      "status": "ERROR",
+      "focus": true,
+      "$$hashKey": "object:4541",
+      "text": "data.select(\"sector\").show()",
+      "dateUpdated": "2023-11-06T07:20:06+0000",
+      "dateFinished": "2023-11-06T07:20:06+0000",
+      "dateStarted": "2023-11-06T07:20:06+0000",
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "org.apache.spark.sql.AnalysisException: cannot resolve '`sector`' given input columns: [_c5, _c3, _c9, _c11, _c4, _c12, _c7, _c10, _c2, _c8, _c0, _c1, _c6];;\n'Project ['sector]\n+- AnalysisBarrier\n      +- GlobalLimit 5\n         +- LocalLimit 5\n            +- Relation[_c0#1670,_c1#1671,_c2#1672,_c3#1673,_c4#1674,_c5#1675,_c6#1676,_c7#1677,_c8#1678,_c9#1679,_c10#1680,_c11#1681,_c12#1682] csv\n\n  at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)\n  at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1$$anonfun$apply$2.applyOrElse(CheckAnalysis.scala:88)\n  at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1$$anonfun$apply$2.applyOrElse(CheckAnalysis.scala:85)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$transformUp$1.apply(TreeNode.scala:289)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$transformUp$1.apply(TreeNode.scala:289)\n  at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:70)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.transformUp(TreeNode.scala:288)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$transformExpressionsUp$1.apply(QueryPlan.scala:95)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$transformExpressionsUp$1.apply(QueryPlan.scala:95)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan.transformExpression$1(QueryPlan.scala:106)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan.org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1(QueryPlan.scala:116)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1$1.apply(QueryPlan.scala:120)\n  at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)\n  at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)\n  at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)\n  at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)\n  at scala.collection.TraversableLike$class.map(TraversableLike.scala:234)\n  at scala.collection.AbstractTraversable.map(Traversable.scala:104)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan.org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1(QueryPlan.scala:120)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$1.apply(QueryPlan.scala:125)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan.mapExpressions(QueryPlan.scala:125)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan.transformExpressionsUp(QueryPlan.scala:95)\n  at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1.apply(CheckAnalysis.scala:85)\n  at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1.apply(CheckAnalysis.scala:80)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:127)\n  at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$class.checkAnalysis(CheckAnalysis.scala:80)\n  at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:91)\n  at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:104)\n  at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:57)\n  at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:55)\n  at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:47)\n  at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:74)\n  at org.apache.spark.sql.Dataset.org$apache$spark$sql$Dataset$$withPlan(Dataset.scala:3295)\n  at org.apache.spark.sql.Dataset.select(Dataset.scala:1307)\n  at org.apache.spark.sql.Dataset.select(Dataset.scala:1325)\n  ... 49 elided\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699255206057_1695858123",
+      "id": "paragraph_1699255206057_1695858123",
+      "dateCreated": "2023-11-06T07:20:06+0000",
+      "status": "ERROR",
+      "focus": true,
+      "$$hashKey": "object:4644",
+      "text": "data.select(\"open\", \"close\", \"adjusted\").show()",
+      "dateUpdated": "2023-11-06T07:20:39+0000",
+      "dateFinished": "2023-11-06T07:20:40+0000",
+      "dateStarted": "2023-11-06T07:20:39+0000",
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "org.apache.spark.sql.AnalysisException: cannot resolve '`open`' given input columns: [_c5, _c3, _c9, _c11, _c4, _c12, _c7, _c10, _c2, _c8, _c0, _c1, _c6];;\n'Project ['open, 'close, 'adjusted]\n+- AnalysisBarrier\n      +- GlobalLimit 5\n         +- LocalLimit 5\n            +- Relation[_c0#1670,_c1#1671,_c2#1672,_c3#1673,_c4#1674,_c5#1675,_c6#1676,_c7#1677,_c8#1678,_c9#1679,_c10#1680,_c11#1681,_c12#1682] csv\n\n  at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)\n  at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1$$anonfun$apply$2.applyOrElse(CheckAnalysis.scala:88)\n  at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1$$anonfun$apply$2.applyOrElse(CheckAnalysis.scala:85)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$transformUp$1.apply(TreeNode.scala:289)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$transformUp$1.apply(TreeNode.scala:289)\n  at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:70)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.transformUp(TreeNode.scala:288)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$transformExpressionsUp$1.apply(QueryPlan.scala:95)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$transformExpressionsUp$1.apply(QueryPlan.scala:95)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan.transformExpression$1(QueryPlan.scala:106)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan.org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1(QueryPlan.scala:116)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1$1.apply(QueryPlan.scala:120)\n  at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)\n  at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:234)\n  at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)\n  at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)\n  at scala.collection.TraversableLike$class.map(TraversableLike.scala:234)\n  at scala.collection.AbstractTraversable.map(Traversable.scala:104)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan.org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1(QueryPlan.scala:120)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$1.apply(QueryPlan.scala:125)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan.mapExpressions(QueryPlan.scala:125)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan.transformExpressionsUp(QueryPlan.scala:95)\n  at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1.apply(CheckAnalysis.scala:85)\n  at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1.apply(CheckAnalysis.scala:80)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:127)\n  at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$class.checkAnalysis(CheckAnalysis.scala:80)\n  at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:91)\n  at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:104)\n  at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:57)\n  at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:55)\n  at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:47)\n  at org.apache.spark.sql.Dataset$.ofRows(Dataset.scala:74)\n  at org.apache.spark.sql.Dataset.org$apache$spark$sql$Dataset$$withPlan(Dataset.scala:3295)\n  at org.apache.spark.sql.Dataset.select(Dataset.scala:1307)\n  at org.apache.spark.sql.Dataset.select(Dataset.scala:1325)\n  ... 49 elided\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699255239847_445560937",
+      "id": "paragraph_1699255239847_445560937",
+      "dateCreated": "2023-11-06T07:20:39+0000",
+      "status": "ERROR",
+      "focus": true,
+      "$$hashKey": "object:4744",
+      "text": "data.filter((col(\"open\") >= 54)).show()",
+      "dateUpdated": "2023-11-06T07:21:09+0000",
+      "dateFinished": "2023-11-06T07:21:10+0000",
+      "dateStarted": "2023-11-06T07:21:09+0000",
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "org.apache.spark.sql.AnalysisException: cannot resolve '`open`' given input columns: [_c5, _c3, _c9, _c11, _c4, _c12, _c7, _c10, _c2, _c8, _c0, _c1, _c6];;\n'Filter ('open >= 54)\n+- AnalysisBarrier\n      +- GlobalLimit 5\n         +- LocalLimit 5\n            +- Relation[_c0#1670,_c1#1671,_c2#1672,_c3#1673,_c4#1674,_c5#1675,_c6#1676,_c7#1677,_c8#1678,_c9#1679,_c10#1680,_c11#1681,_c12#1682] csv\n\n  at org.apache.spark.sql.catalyst.analysis.package$AnalysisErrorAt.failAnalysis(package.scala:42)\n  at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1$$anonfun$apply$2.applyOrElse(CheckAnalysis.scala:88)\n  at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1$$anonfun$apply$2.applyOrElse(CheckAnalysis.scala:85)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$transformUp$1.apply(TreeNode.scala:289)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$transformUp$1.apply(TreeNode.scala:289)\n  at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:70)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.transformUp(TreeNode.scala:288)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$3.apply(TreeNode.scala:286)\n  at org.apache.spark.sql.catalyst.trees.TreeNode$$anonfun$4.apply(TreeNode.scala:306)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.mapChildren(TreeNode.scala:304)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.transformUp(TreeNode.scala:286)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$transformExpressionsUp$1.apply(QueryPlan.scala:95)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$transformExpressionsUp$1.apply(QueryPlan.scala:95)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan.transformExpression$1(QueryPlan.scala:106)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan.org$apache$spark$sql$catalyst$plans$QueryPlan$$recursiveTransform$1(QueryPlan.scala:116)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan$$anonfun$1.apply(QueryPlan.scala:125)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.mapProductIterator(TreeNode.scala:187)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan.mapExpressions(QueryPlan.scala:125)\n  at org.apache.spark.sql.catalyst.plans.QueryPlan.transformExpressionsUp(QueryPlan.scala:95)\n  at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1.apply(CheckAnalysis.scala:85)\n  at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$$anonfun$checkAnalysis$1.apply(CheckAnalysis.scala:80)\n  at org.apache.spark.sql.catalyst.trees.TreeNode.foreachUp(TreeNode.scala:127)\n  at org.apache.spark.sql.catalyst.analysis.CheckAnalysis$class.checkAnalysis(CheckAnalysis.scala:80)\n  at org.apache.spark.sql.catalyst.analysis.Analyzer.checkAnalysis(Analyzer.scala:91)\n  at org.apache.spark.sql.catalyst.analysis.Analyzer.executeAndCheck(Analyzer.scala:104)\n  at org.apache.spark.sql.execution.QueryExecution.analyzed$lzycompute(QueryExecution.scala:57)\n  at org.apache.spark.sql.execution.QueryExecution.analyzed(QueryExecution.scala:55)\n  at org.apache.spark.sql.execution.QueryExecution.assertAnalyzed(QueryExecution.scala:47)\n  at org.apache.spark.sql.Dataset.<init>(Dataset.scala:172)\n  at org.apache.spark.sql.Dataset.<init>(Dataset.scala:178)\n  at org.apache.spark.sql.Dataset$.apply(Dataset.scala:65)\n  at org.apache.spark.sql.Dataset.withTypedPlan(Dataset.scala:3300)\n  at org.apache.spark.sql.Dataset.filter(Dataset.scala:1458)\n  ... 49 elided\n"
+          }
+        ]
+      }
+    },
+    {
+      "user": "anonymous",
+      "progress": 0,
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1699255269511_118826466",
+      "id": "paragraph_1699255269511_118826466",
+      "dateCreated": "2023-11-06T07:21:09+0000",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:4844"
+    }
+  ],
+  "name": "Sobirov",
+  "id": "2JFD5EQ5A",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.10.1",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/Sobirov"
+}
